@@ -46,60 +46,6 @@ class _SettingsPageState extends State<SettingsPage> {
           }
         },
       ),
-
-      //bottom navigation tab
-      // bottomNavigationBar: Container(
-      //   color: Colors.black,
-      //   child: Padding(
-      //     padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
-      //     child: GNav(
-      //       backgroundColor: Colors.black,
-      //       color: Colors.white,
-      //       activeColor: Colors.white,
-      //       tabBackgroundColor: Colors.grey.shade800,
-      //       gap: 9,
-      //       padding: const EdgeInsets.all(14),
-      //       tabs: [
-      //         GButton(
-      //           icon: Icons.home,
-      //           text: 'Home',
-      //           onPressed: () {
-      //             Navigator.push(
-      //               context,
-      //               MaterialPageRoute(
-      //                 builder: (context) => HomePage(),
-      //               ),
-      //             );
-      //           },
-      //         ),
-      //         GButton(
-      //           icon: Icons.favorite_border,
-      //           text: 'Favorite',
-      //           onPressed: () {
-      //             Navigator.push(
-      //               context,
-      //               MaterialPageRoute(
-      //                 builder: (context) => FavoritePage(),
-      //               ),
-      //             );
-      //           },
-      //         ),
-      //         GButton(
-      //           icon: Icons.settings,
-      //           text: 'Settings',
-      //           onPressed: () {
-      //             Navigator.push(
-      //               context,
-      //               MaterialPageRoute(
-      //                 builder: (context) => SettingsPage(),
-      //               ),
-      //             );
-      //           },
-      //         ),
-      //       ],
-      //     ),
-      //   ),
-      // ),
     );
   }
 }

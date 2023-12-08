@@ -4,6 +4,7 @@ import 'package:gallery_app/pages/homepage.dart';
 import 'package:gallery_app/pages/settingspage.dart';
 
 
+
 void main() {
   runApp(const MyApp());
 }

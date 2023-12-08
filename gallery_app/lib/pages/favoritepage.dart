@@ -3,10 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:gallery_app/components/bottomnavbar.dart';
 
-// import 'package:gallery_app/pages/homepage.dart';
-// import 'package:gallery_app/pages/settingspage.dart';
-// import 'package:google_nav_bar/google_nav_bar.dart';
-
 class FavoritePage extends StatefulWidget {
   const FavoritePage({super.key});
 
@@ -34,6 +30,16 @@ class _FavoritePageState extends State<FavoritePage> {
             height: 350,
             color: Colors.grey[200],
           ),
+          Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("lib/assets/images/splash.jpg"),
+            fit: BoxFit.fill,
+          ),
+        ),
+      ),
         ],
       ),
 
@@ -50,44 +56,7 @@ class _FavoritePageState extends State<FavoritePage> {
         },
       ),
 
-      //bottom navigation tab
-      // bottomNavigationBar: Container(
-      //   color: Colors.black,
-      //   child: Padding(
-      //     padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
-      //     child: GNav(
-      //       backgroundColor: Colors.black,
-      //       color: Colors.white,
-      //       activeColor: Colors.white,
-      //       tabBackgroundColor: Colors.grey.shade800,
-      //       gap: 9,
-      //       padding: const EdgeInsets.all(14),
-      //       tabs:  [
-      //         GButton(
-      //           icon: Icons.home,
-      //           text: 'Home',
-      //           onPressed: (){
-      //             Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage() ));
-      //           },
-      //         ),
-      //         GButton(
-      //           icon: Icons.favorite_border,
-      //           text: 'Favorite',
-      //           onPressed: (){
-      //             Navigator.push(context,  MaterialPageRoute(builder: (context) => FavoritePage() ));
-      //           },
-      //         ),
-      //         GButton(
-      //           icon: Icons.settings,
-      //           text: 'Settings',
-      //           onPressed: (){
-      //             Navigator.push(context,  MaterialPageRoute(builder: (context) => SettingsPage() ));
-      //           },
-      //         ),
-      //       ],
-      //     ),
-      //   ),
-      // ),
+
     );
   }
 }
